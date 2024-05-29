@@ -1,0 +1,44 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('MoMA_KI.webp') no-repeat center center fixed;
+    background-size: cover;
+    /* Ensure the background covers the entire page */
+    /* Dark background for contrast */
+    color: white;
+    /* Text color for visibility */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 75vw;
+    /* Full viewport width */
+    height: 75vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 75%;
+    height: auto;
+    transform: scaleX(0);
+    transform-origin: center center;
+    transition: transform 1s ease-in-out;
+
+}
